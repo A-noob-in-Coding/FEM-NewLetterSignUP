@@ -71,10 +71,18 @@ body{
     }
 
     p{
+        font-size: 0.8rem;
+        word-wrap: normal;
         line-height: 1.5rem;
     }
 
-    span{
+    .user-email {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        vertical-align: bottom;
         font-weight: bold;
     }
 }
@@ -201,6 +209,12 @@ main .illustration{
         p{
             line-height: 2rem;
             font-size: 1.3rem;
+        }
+        .user-email {
+            display: inline-block;
+            max-width: 100%;
+            word-break: break-all;
+            font-weight: bold;
         }
         display: none;
     }
