@@ -63,6 +63,7 @@ body{
         border: none;
         background-color: var(--CharcoalGrey);   
         font-size: 1.1rem;
+        cursor: pointer;
     }
 
     button:hover{
@@ -143,6 +144,8 @@ main .calculator-input{
         height: 2.5rem;
         font-size: 1.1rem;
         border-radius: 5px;
+        outline: none;
+        border: 1px solid var(--DarkSlateGrey);
     }
 }
 

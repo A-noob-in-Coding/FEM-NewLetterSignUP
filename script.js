@@ -6,6 +6,8 @@ let success_container = document.getElementById("success-container");
 let email = ""
 let error_el = document.getElementById("error")
 let span_email = document.getElementById("user_email")
+
+span_email.innerText = "example@gmail.com"
 // event listeners
 submit_btn.addEventListener("click", () =>{
     if( validateEmail(email)){
@@ -32,7 +34,7 @@ email_input.addEventListener("input" , ()=>{
 
 //functions
 function validateEmail(email) {
-    // Regular expression for validating an email address
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Regular expression for validating an email address without symbols before @
+    const emailRegex = /^[a-zA-Z0-9.]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
