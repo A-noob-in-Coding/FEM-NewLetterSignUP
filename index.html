@@ -11,6 +11,9 @@
 </head>
 <body>
   <main>
+    <section class="illustration-mobile">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+    </section>
     <section class="calculator-input">
       <h1>
         Stay updated!
@@ -20,6 +23,7 @@
       </p>
       <ul>
         <li>
+          
           Product discovery and building what matters
         </li>
         <li>
@@ -30,11 +34,15 @@
         </li>
       </ul>
       <form action="">  
-        <label for="email-input">Email address
-          <input type="email">
+        <label for="email-input">
+          <p>
+            <span>Email adress</span>
+            <span class="error" id="error">Valid email required</span>
+          </p>
+            <input type="email" id="email-input" placeholder="email@company.com">
         </label>
       </form>
-      <button>
+      <button id="submit-btn">
         Subscribe to monthly newsletter
       </button>
     </section>
@@ -42,11 +50,12 @@
       <img src="/assets/images/illustration-sign-up-desktop.svg" alt="illustration-pic">
     </section>
   </main>
-  <div class="success-container">
+  <div class="success-container" id="success-container">
     <img src="/assets/images/icon-success.svg" alt="success icon">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <span id="user_email">-</span>. Please open it and click the button inside to confirm your subscription.</p>
-    <button>Dismiss message</button>
+    <p>A confirmation email has been sent to <span id="user_email">shera@ahmedSE.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button id="dismiss-btn">Dismiss message</button>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
