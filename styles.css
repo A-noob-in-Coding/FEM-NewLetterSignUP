@@ -162,7 +162,7 @@ main .calculator-input{
         font-size: 1.1rem;
         border-radius: 5px;
         outline: none;
-        border: 1px solid var(--DarkSlateGrey);
+        border: 1px solid var(--Grey);
     }
 }
 
