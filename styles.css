@@ -34,6 +34,7 @@ body{
     font-family: Roboto;
     min-height: 100vh;
     display: flex;
+    min-width: 100vw;
     justify-content: center;
     align-items: center;
     background-color: var(--CharcoalGrey);
@@ -67,7 +68,7 @@ body{
     }
 
     button:hover{
-        background-color: var(--Tomato);
+        background: linear-gradient(to right,  rgba(221, 37, 123, 0.887), hsl(4, 100%, 67%));
     }
 
     p{
@@ -88,8 +89,11 @@ body{
 }
 
 main{
-    width: 60%;
-    padding: 2rem;
+    max-height: 60vh;
+    width: 650px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
     display: flex;
     background-color: var(--White);
     border-radius: 10px;
@@ -100,8 +104,10 @@ main .calculator-input{
     padding: 0rem 2rem 0rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    gap:0.5rem;
+    p{
+        font-size: 0.8rem;
+    }
     h1{
         font-family: RobotoBold;
         font-size: 2rem;
@@ -115,9 +121,11 @@ main .calculator-input{
         border: none;
     }
     button:hover{
-        background-color: var(--Tomato);
+        
+        background: linear-gradient(to right,  rgba(221, 37, 123, 0.887), hsl(4, 100%, 67%));
     }
     li{
+        font-size: 0.6rem;
         padding: 0.5rem 0rem 0.5rem 0rem;
         list-style: none;        
     }
@@ -141,6 +149,7 @@ main .calculator-input{
     }
 
     label p{
+        font-size: 1rem;
         display: flex;
         justify-content: space-between;
     }
@@ -158,18 +167,20 @@ main .calculator-input{
 }
 
 .illustration-mobile{
+    height: 100%;
     display: none;
 }
 
 main .illustration{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    img{
+        width: 100%;
+        height: 60vh;
+    }
 }
 
-.illustration-mobile{
-    display: none;
-}
 
 @media screen and (max-width:47.9em){
     
@@ -182,14 +193,14 @@ main .illustration{
     }
     main{
         width: 100%;
-        height: 100vh;
         margin: 0;
         padding-top: 0;
         width: 90%;
+        min-height: 90vh;
         flex-direction: column;
         gap: 1rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     main .calculator-input{
